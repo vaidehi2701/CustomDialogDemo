@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/ra">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRefresh"
+            android:text="Refresh Testing"
+            android:textColor="#000000"
+            android:textSize="20dp"
+           android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btncd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRefresh"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_background"
+            android:textColor="#ffffff"
+            android:text="Custom Dialog_1" />
+
+        <Button
+            android:id="@+id/btncd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btncd1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_background"
+            android:textColor="#ffffff"
+
+            android:text="Custom Dialog_2" />
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
